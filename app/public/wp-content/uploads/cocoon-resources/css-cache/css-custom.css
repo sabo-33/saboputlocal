@@ -51,7 +51,8 @@
 .demo .entry-content p {
   line-height: 4;
 }
-    .main p,
+    .main,
+  .main p,
   .main p.wp-block-paragraph {
     line-height: 4;
   }

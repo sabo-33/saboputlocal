@@ -825,3 +825,19 @@ ol, ul {
 // .wp-block-table {
 // 	overflow: auto;
 // }
+
+//Gutenbergオプションのセレクトボックスの調整
+.meta-box-sortables select {
+  box-sizing: border-box;
+}
+
+// プレイビュースタイルの調整
+.has-drop-cap:not(:focus)::first-letter {
+  float: none;
+  font-size: 1em;
+}
+
+// プレイビュースタイルの背景色を白にする
+.wp-block-paragraph.has-drop-cap{
+  background-color: #fff;
+}

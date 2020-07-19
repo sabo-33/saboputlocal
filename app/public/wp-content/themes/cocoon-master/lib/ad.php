@@ -21,11 +21,11 @@ function is_ads_visible(){
   //広告の除外（いずれかがあてはまれば表示しない）
   $is_exclude_ids = (
     //記事の除外
-    (!$post_ids_empty && is_single( $post_ids )) || //投稿ページの除外
-    (!$post_ids_empty && is_page( $post_ids )) ||   //個別ページの除外
+    (!$post_ids_empty && is_single( $post_ids ))//投稿ページの除外
+    || (!$post_ids_empty && is_page( $post_ids )) //個別ページの除外
     //カテゴリの除外
-    (!$category_ids_empty && is_single() && in_category( $category_ids )) ||//投稿ページの除外
-    (!$category_ids_empty && in_category( $category_ids )) //アーカイブページの除外
+    || (!$category_ids_empty && is_single() && in_category( $category_ids )) //投稿ページの除外
+    || (!$category_ids_empty && is_category( $category_ids )) //カテゴリーアーカイブページの除外
   );
 
   return is_all_ads_visible() &&
@@ -129,19 +129,23 @@ function get_amp_adsense_responsive_code($format = DATA_AD_FORMAT_AUTO, $code = 
         <amp-ad
           media="(max-width: 480px)"
           layout="fixed-height"
-          height="1000"
+          height="800"
           type="adsense"
           data-ad-client="'.$ad_client.'"
-          data-ad-slot="'.$ad_slot.'">
+          data-ad-slot="'.$ad_slot.'"
+          data-auto-format="rspv"
+          data-full-width>
         </amp-ad>
 
         <amp-ad
           media="(min-width: 481px)"
           layout="fixed-height"
-          height="600"
+          height="320"
           type="adsense"
           data-ad-client="'.$ad_client.'"
-          data-ad-slot="'.$ad_slot.'">
+          data-ad-slot="'.$ad_slot.'"
+          data-auto-format="rspv"
+          data-full-width>
         </amp-ad>';
     } else {
       //リンクユニットの場合
@@ -174,7 +178,6 @@ function get_amp_adsense_responsive_code($format = DATA_AD_FORMAT_AUTO, $code = 
         </amp-ad>';
       } else {
         $code = '<amp-ad
-          media="(max-width: 480px)"
           width="100vw"
           height="320"
           type="adsense"
@@ -183,15 +186,6 @@ function get_amp_adsense_responsive_code($format = DATA_AD_FORMAT_AUTO, $code = 
           data-auto-format="rspv"
           data-full-width>
             <div overflow></div>
-        </amp-ad>
-
-        <amp-ad
-          media="(min-width: 481px)"
-          layout="fixed-height"
-          height="280"
-          type="adsense"
-          data-ad-client="'.$ad_client.'"
-          data-ad-slot="'.$ad_slot.'">
         </amp-ad>';
       }
     }

@@ -1073,3 +1073,16 @@ ol, ul {
 .block-editor-writing-flow__click-redirect {
   display: none;
 }
+
+.meta-box-sortables select {
+  box-sizing: border-box;
+}
+
+.has-drop-cap:not(:focus)::first-letter {
+  float: none;
+  font-size: 1em;
+}
+
+.wp-block-paragraph.has-drop-cap {
+  background-color: #fff;
+}

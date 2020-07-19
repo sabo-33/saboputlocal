@@ -32,6 +32,7 @@ if($pages != 1) {
   if ( $paged < $pages ) {
     $url = get_pagenum_link($next_page_num);
     //$url = get_query_removed_url($url);
+    // var_dump($url);
     echo '<div class="pagination-next"><a href="'.esc_url($url).'" class="pagination-next-link key-btn">'.__( '次のページ', THEME_NAME ).'</a></div>';
   }
 
@@ -47,10 +48,21 @@ if($pages != 1) {
     $paginate_base = add_query_arg('paged','%#%');
   }
   else{
+    $pagenum_link = html_entity_decode( get_pagenum_link() );
+    // _v($pagenum_link);
+    $url = get_pagenum_link(2);
+    // _v($url);
+    $string = str_replace(trailingslashit($pagenum_link), '', $url);
+    // _v($string);
+    $string = str_replace('/2/', '/%#%/', $string);
+    // _v($string);
     $paginate_format = (substr($paginate_base,-1,1) == '/' ? '' : '/') .
-    user_trailingslashit('page/%#%/','paged');;
+    user_trailingslashit($string, 'paged');
+    // _v($paginate_format);
     $paginate_base .= '%_%';
   }
+  // var_dump($paginate_base);
+  // var_dump($paginate_format);
 
   echo paginate_links(array(
     'base' => $paginate_base,
