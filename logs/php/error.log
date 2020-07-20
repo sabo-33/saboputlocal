@@ -8,3 +8,9 @@
 [05-Jul-2020 09:49:02 UTC] PHP   2. Blogger_Importer->dispatch() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-admin/admin.php:346
 [05-Jul-2020 09:49:02 UTC] PHP   3. Blogger_Importer->handle_upload() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-content/plugins/blogger-importer/blogger-importer.php:74
 [05-Jul-2020 09:49:02 UTC] PHP   4. Blogger_Importer->get_authors_from_import() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-content/plugins/blogger-importer/blogger-importer.php:211
+[19-Jul-2020 18:28:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-content/plugins/blogger-importer/blogger-importer.php on line 227
+[19-Jul-2020 18:28:33 UTC] PHP Stack trace:
+[19-Jul-2020 18:28:33 UTC] PHP   1. {main}() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-admin/admin.php:0
+[19-Jul-2020 18:28:33 UTC] PHP   2. Blogger_Importer->dispatch() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-admin/admin.php:346
+[19-Jul-2020 18:28:33 UTC] PHP   3. Blogger_Importer->handle_upload() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-content/plugins/blogger-importer/blogger-importer.php:74
+[19-Jul-2020 18:28:33 UTC] PHP   4. Blogger_Importer->get_authors_from_import() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-content/plugins/blogger-importer/blogger-importer.php:211
