@@ -14,3 +14,38 @@
 [19-Jul-2020 18:28:33 UTC] PHP   2. Blogger_Importer->dispatch() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-admin/admin.php:346
 [19-Jul-2020 18:28:33 UTC] PHP   3. Blogger_Importer->handle_upload() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-content/plugins/blogger-importer/blogger-importer.php:74
 [19-Jul-2020 18:28:33 UTC] PHP   4. Blogger_Importer->get_authors_from_import() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-content/plugins/blogger-importer/blogger-importer.php:211
+[27-Jul-2020 08:26:34 UTC] PHP Warning:  予期しないエラーが発生しました。WordPress.org かこのサーバーの設定に何か問題があるかもしれません。問題が続くようであれば、<a href="https://ja.wordpress.org/support/forums/">サポートフォーラム</a>を参照してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/update.php on line 578
+[27-Jul-2020 08:26:34 UTC] PHP Stack trace:
+[27-Jul-2020 08:26:34 UTC] PHP   1. {main}() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-cron.php:0
+[27-Jul-2020 08:26:34 UTC] PHP   2. do_action_ref_array() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-cron.php:138
+[27-Jul-2020 08:26:34 UTC] PHP   3. WP_Hook->do_action() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/plugin.php:544
+[27-Jul-2020 08:26:34 UTC] PHP   4. WP_Hook->apply_filters() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/class-wp-hook.php:311
+[27-Jul-2020 08:26:34 UTC] PHP   5. wp_update_themes() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/class-wp-hook.php:287
+[27-Jul-2020 08:26:34 UTC] PHP   6. trigger_error() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/update.php:578
+[27-Jul-2020 08:27:26 UTC] PHP Warning:  予期しないエラーが発生しました。WordPress.org かこのサーバーの設定に何か問題があるかもしれません。問題が続くようであれば、<a href="https://ja.wordpress.org/support/forums/">サポートフォーラム</a>を参照してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/update.php on line 162
+[27-Jul-2020 08:27:26 UTC] PHP Stack trace:
+[27-Jul-2020 08:27:26 UTC] PHP   1. {main}() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-admin/update.php:0
+[27-Jul-2020 08:27:26 UTC] PHP   2. Theme_Upgrader->bulk_upgrade() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-admin/update.php:218
+[27-Jul-2020 08:27:26 UTC] PHP   3. do_action() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-admin/includes/class-theme-upgrader.php:431
+[27-Jul-2020 08:27:26 UTC] PHP   4. WP_Hook->do_action() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/plugin.php:478
+[27-Jul-2020 08:27:26 UTC] PHP   5. WP_Hook->apply_filters() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/class-wp-hook.php:311
+[27-Jul-2020 08:27:26 UTC] PHP   6. wp_version_check() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/class-wp-hook.php:285
+[27-Jul-2020 08:27:26 UTC] PHP   7. trigger_error() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/update.php:162
+[27-Jul-2020 08:27:32 UTC] PHP Warning:  予期しないエラーが発生しました。WordPress.org かこのサーバーの設定に何か問題があるかもしれません。問題が続くようであれば、<a href="https://ja.wordpress.org/support/forums/">サポートフォーラム</a>を参照してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/update.php on line 388
+[27-Jul-2020 08:27:32 UTC] PHP Stack trace:
+[27-Jul-2020 08:27:32 UTC] PHP   1. {main}() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-admin/update.php:0
+[27-Jul-2020 08:27:32 UTC] PHP   2. Theme_Upgrader->bulk_upgrade() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-admin/update.php:218
+[27-Jul-2020 08:27:32 UTC] PHP   3. do_action() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-admin/includes/class-theme-upgrader.php:431
+[27-Jul-2020 08:27:32 UTC] PHP   4. WP_Hook->do_action() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/plugin.php:478
+[27-Jul-2020 08:27:32 UTC] PHP   5. WP_Hook->apply_filters() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/class-wp-hook.php:311
+[27-Jul-2020 08:27:32 UTC] PHP   6. wp_update_plugins() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/class-wp-hook.php:285
+[27-Jul-2020 08:27:32 UTC] PHP   7. trigger_error() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/update.php:388
+[27-Jul-2020 08:27:38 UTC] PHP Warning:  予期しないエラーが発生しました。WordPress.org かこのサーバーの設定に何か問題があるかもしれません。問題が続くようであれば、<a href="https://ja.wordpress.org/support/forums/">サポートフォーラム</a>を参照してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/update.php on line 578
+[27-Jul-2020 08:27:38 UTC] PHP Stack trace:
+[27-Jul-2020 08:27:38 UTC] PHP   1. {main}() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-admin/update.php:0
+[27-Jul-2020 08:27:38 UTC] PHP   2. Theme_Upgrader->bulk_upgrade() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-admin/update.php:218
+[27-Jul-2020 08:27:38 UTC] PHP   3. do_action() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-admin/includes/class-theme-upgrader.php:431
+[27-Jul-2020 08:27:38 UTC] PHP   4. WP_Hook->do_action() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/plugin.php:478
+[27-Jul-2020 08:27:38 UTC] PHP   5. WP_Hook->apply_filters() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/class-wp-hook.php:311
+[27-Jul-2020 08:27:38 UTC] PHP   6. wp_update_themes() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/class-wp-hook.php:285
+[27-Jul-2020 08:27:38 UTC] PHP   7. trigger_error() /Users/nozomiishihara/Local Sites/saboputlocal/app/public/wp-includes/update.php:578
